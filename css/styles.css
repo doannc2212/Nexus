@@ -1,0 +1,168 @@
+body {
+  width: 100vw;
+}
+
+* {
+  font-size: 14px;
+  color: #071e55;
+  font-family: 'Cabin', sans-serif;
+  font-style: normal !important;
+  font-weight: lighter !important;
+  transition: all 0.3s ease;
+}
+
+i {
+  font-weight: 900 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Navigation Bar */
+.navbar-nav>li>a {
+  color: #071e55;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  line-height: 1.8rem;
+}
+
+.btn-discover {
+  color: white !important;
+  background: #1089d4;
+  border: 1px solid #1089d4;
+  border-radius: 11px 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-left: 1rem;
+}
+
+.btn-discover:hover {
+  color: #1089d4 !important;
+  background: white;
+}
+
+.navbar-brand {
+  color: #071e55 !important;
+}
+
+#btn-collapse {
+  background-color: white;
+  border: 1px solid #1089d4;
+}
+
+#btn-collapse>i {
+  color: #1089d4;
+}
+
+.navbar-brand:hover {
+  color: #1089d4 !important;
+}
+
+.navbar-toggler>span>i {
+  color: #1089d4;
+  font-size: 1.6rem;
+}
+
+.navbar-toggler {
+  border: 1px solid #1089d4;
+  border-radius: 2px;
+  display: none;
+}
+
+/* Home */
+#home {
+  height: 600px;
+}
+
+.home-span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: #405263;
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+.home-span>i {
+  color: #1089d4;
+  font-size: 1.5rem;
+  padding-right: 0.4rem;
+}
+
+.img-wrap>img {
+  width: inherit;
+  height: inherit;
+}
+
+.email-home {
+  font-weight: 100;
+  border: 1px solid #bebebe;
+  border-radius: 30px 30px;
+  color: #454545;
+  font-size: 1.2rem;
+}
+
+.email-home::placeholder {
+  font-weight: 100 !important;
+  font-family: 'Arial', sans-serif;
+  color: lightgray;
+}
+
+.email-home:focus {
+  border: 1px solid #1089d4;
+  color: #1089d4;
+}
+
+.btn-discover-home {
+  color: white !important;
+  background: #1089d4;
+  border: 1px solid #1089d4;
+  border-radius: 30px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-discover-home:hover {
+  background-color: #086faf;
+  cursor: pointer;
+}
+
+.box-home-description * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .btn-discover {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+
+  .navbar-nav>li>a {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  * {
+    font-size: 9px;
+  }
+}
