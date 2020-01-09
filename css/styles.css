@@ -298,10 +298,12 @@ figure.img-wrap>img {
   border-radius: 10px;
   border-bottom: 2px solid #e0e0e0;
   box-shadow: rgba(33,33,33,.055) 0 4px 24px 5px;
+  transition: all 1s ease;
 }
 
 .card:hover {
   border-bottom: 2px solid #1089d4;
+  transition: all 1s ease;
 }
 
 .card-container>div {
@@ -322,17 +324,17 @@ figure.img-wrap>img {
 .card-box p {
   font-style: italic;
   line-height: 1.6rem;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .card-box {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .card-avatar {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border-radius: 1px solid transparent;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
@@ -346,8 +348,8 @@ figure.img-wrap>img {
 .card-avatar>img {
   border-radius: 10px solid white;
   border-radius: 50%;
-  width: 105px;
-  height: 105px;
+  width: 95px;
+  height: 95px;
 }
 
 /* Responsive */
@@ -373,7 +375,7 @@ figure.img-wrap>img {
   }
 
   .card-container>div {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
