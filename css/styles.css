@@ -110,8 +110,9 @@ current:hover {
 
 /* Home */
 #home {
-  padding-top: 200px;
-  padding-bottom: 140px;
+  z-index: 100;
+  padding-top: 92px;
+  margin-top: -92px;
 }
 
 .home-span {
@@ -172,8 +173,10 @@ current:hover {
 
 /* About */
 #about {
-  padding-top: 160px;
-  padding-bottom: 100px;
+  z-index: 99;
+  padding-top: 92px;
+  /* padding-bottom: 100px; */
+  margin-top: -92px;
 }
 
 .about-label>span {
@@ -247,8 +250,9 @@ figure.img-wrap>img {
 }
 
 #showcase {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  z-index: 98;
+  padding-top: 92px;
+  margin-top: -92px;
 }
 
 .showcase-label>h1 {
@@ -260,6 +264,90 @@ figure.img-wrap>img {
   font-family: 'Raleway', sans-serif;
   color: white;
   letter-spacing: 0.5px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  cursor: grab;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.3rem;
+  background: #fff;
+}
+
+/* Testimonials */
+#testimonials {
+  z-index: 97;
+  padding-top: 92px;
+  margin-top: -92px;
+}
+
+.testimonials-logo {
+  opacity: 0.5;
+}
+
+.testimonials-logo:hover {
+  opacity: 0.9;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: rgba(33,33,33,.055) 0 4px 24px 5px;
+}
+
+.card:hover {
+  border-bottom: 2px solid #1089d4;
+}
+
+.card-container>div {
+  padding-top: 30px;
+}
+
+.card-box>div>i {
+  color: #fdcc28;
+  font-size: 1.3rem;
+}
+
+.card-box h4 {
+  color: #1e90ff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-box p {
+  font-style: italic;
+  line-height: 1.6rem;
+  padding: 10px 0px;
+}
+
+.card-box {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.card-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-radius: 1px solid transparent;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  margin-left: -60px;
+  background-color: white;
+}
+
+.card-avatar>img {
+  border-radius: 10px solid white;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
 }
 
 /* Responsive */
@@ -282,6 +370,10 @@ figure.img-wrap>img {
   } */
   .navbar-nav>li>a {
     font-size: 1.5rem !important;
+  }
+
+  .card-container>div {
+    padding-top: 100px;
   }
 }
 

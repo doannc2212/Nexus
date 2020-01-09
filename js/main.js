@@ -1,3 +1,4 @@
+// Magnific Popup
 $(document).ready(function() {
   $('.popup-video').magnificPopup({
     type: 'iframe',
@@ -18,4 +19,26 @@ $(document).ready(function() {
       srcAction: 'iframe_src',
     }
   });
+});
+
+
+
+// Swiper
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  }
 });
