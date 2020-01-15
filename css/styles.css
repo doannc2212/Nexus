@@ -7,9 +7,17 @@ body {
   color: #071e55;
   font-family: 'Cabin', sans-serif;
   font-style: normal !important;
-  font-weight: lighter !important;
   transition: all 0.3s ease;
   scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 i {
@@ -143,7 +151,7 @@ current:hover {
 .email-home::placeholder {
   font-weight: 100 !important;
   font-family: 'Raleway', sans-serif;
-  color: lightgray;
+  color: #ebebeb;
 }
 
 .email-home:focus {
@@ -207,7 +215,7 @@ figure {
 figure.img-wrap>img {
   border: 0px solid transparent;
   border-radius: 10px;
-  box-shadow: 0px 5px 50px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
 .popup-video {
@@ -228,7 +236,7 @@ figure.img-wrap>img {
   font-size: 2.2rem;
 }
 
-.btn-about-extra {
+.btn-blue-shadow {
   color: white;
   background: #1089d4;
   border: 0px solid #1089d4;
@@ -240,7 +248,7 @@ figure.img-wrap>img {
   box-shadow: 0px 5px 34px 0 rgba(0, 0, 0, 0.25);
 }
 
-.btn-about-extra:hover {
+.btn-blue-shadow:hover {
   box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -297,7 +305,7 @@ figure.img-wrap>img {
   position: relative;
   border-radius: 10px;
   border-bottom: 2px solid #e0e0e0;
-  box-shadow: rgba(33,33,33,.055) 0 4px 24px 5px;
+  box-shadow: rgba(33, 33, 33, .055) 0 4px 24px 5px;
   transition: all 1s ease;
 }
 
@@ -317,8 +325,10 @@ figure.img-wrap>img {
 
 .card-box h4 {
   color: #1e90ff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin: 12px 0px;
 }
 
 .card-box p {
@@ -341,15 +351,208 @@ figure.img-wrap>img {
   position: absolute;
   top: -60px;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -55px;
+  /*this value = half of width*/
   background-color: white;
 }
 
 .card-avatar>img {
   border-radius: 10px solid white;
   border-radius: 50%;
-  width: 95px;
-  height: 95px;
+  width: 90%;
+  height: 90%;
+}
+
+.question-header {
+  border: 0px solid transparent;
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px 0;
+}
+
+.question-header>button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.question-text {
+  padding-top: 8px;
+  padding-bottom: 0px;
+  border-top: 2px solid #1e90ff;
+  display: none;
+}
+
+.more-question {
+  border-top: 3px solid #1e90ff !important;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 40px 0;
+}
+
+/* Pricing */
+#pricing {
+  padding-top: 92px;
+  margin-top: -92px;
+  z-index: 96;
+}
+
+#pricing>div {
+  border: 1px solid #ebebeb;
+  padding: 70px 0px;
+}
+
+.pricing-box {
+  box-shadow: rgba(33, 33, 33, .06) 0 4px 24px 5px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  border-bottom: 3px solid #e0e0e0;
+  transition: all 0.5s ease;
+}
+
+.pricing-box:hover {
+  border-bottom: 3px solid #1e90ff;
+  transition: all 0.5s ease;
+}
+
+.pricing-box-highlight {
+  border-bottom: 3px solid #1e90ff !important;
+}
+
+.pricing-box h1 {
+  font-size: 5.3rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.pricing-box h5 {
+  font-size: 1.4rem;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1089d4;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.pricing-box span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #878787;
+}
+
+.pricing-box button {
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #1089d4;
+  border-radius: 5px;
+  color: #1089d4;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  transition: 0.5s all ease;
+}
+
+.pricing-box button:hover {
+  transition: 0.5s all ease;
+  background-color: #037aef !important;
+  color: white;
+}
+
+.pricing-box-highlight button {
+  ;
+  background-color: #1e90ff !important;
+  color: white !important;
+}
+
+.pricing-box-features {
+  margin: 30px 0px;
+}
+
+.pricing-box-features p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  margin-bottom: 7px;
+  opacity: 0.9;
+  color: #6a6a6a;
+}
+
+.pricing-box-features p i {
+  margin-right: 7px;
+  color: #017df7;
+}
+
+.ribbon {
+  position: absolute;
+  right: 8px;
+  top: -5px;
+  z-index: 97;
+  /*Because pricing's z-index is 96*/
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+}
+
+.ribbon span {
+  font-size: 0.75rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  transform: rotate(45deg);
+  width: 100px;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px;
+  right: -21px;
+  background-color: #1e90ff;
+}
+
+.ribbon span::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+  border-left-color: #1e5799;
+  border-top-color: #1e5799;
+}
+
+.ribbon span::after {
+  content: '';
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid #79A70A;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+  border-right-color: #1e5799;
+  border-top-color: #1e5799;
+}
+
+.pricing-header h1 {
+  font-size: 2.8rem !important;
+}
+
+.pricing-header span {
+  font-size: 1.3rem !important;
+  opacity: 0.8 !important;
+}
+
+.pricing-strong {
+  opacity:1.0;
+  font-weight:600;
 }
 
 /* Responsive */

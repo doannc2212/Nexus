@@ -42,3 +42,20 @@ var swiper = new Swiper('.swiper-container', {
     },
   }
 });
+
+
+function showQuestionText(index) {
+  var btnQuestion = document.getElementsByClassName('question-text');
+  var questionHeader = document.getElementsByClassName('question-header');
+  if (btnQuestion[index].style.display == "block") {
+    btnQuestion[index].style.display = "none";
+  } else {
+    btnQuestion[index].style.display = "block"
+  }
+
+  for (var i = 0; i < btnQuestion.length; i++) {
+    if (index != i) {
+      btnQuestion[i].style.display = "none";
+    }
+  }
+}

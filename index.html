@@ -15,6 +15,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Wowjs/Animate -->
+  <link rel="stylesheet" href="css/animate.css">
+
   <!-- Swiper -->
   <link rel="stylesheet" href="css/swiper.min.css">
 
@@ -138,9 +141,9 @@
         <p>Work is completely different today. Teams are more agile, more collaborative and drive innovation faster than ever — and the most successful companies have a digital workplace to match.</p>
         <p>Nexus is designed with your customers in mind, so you can track and analyze all your data in one central location.</p>
         <br>
-        <button type="button" name="button" class="btn-about-extra py-3 px-4">Start Your Free Trial</button>
+        <button type="button" name="button" class="btn-blue-shadow py-3 px-4">Start Your Free Trial</button>
       </div>
-      <figure class="img-wrap col-md-6 col-12 py-md-4 py-3 text-center">
+      <figure class="img-wrap col-md-6 col-12 py-md-4 py-3 text-center wow slideInRight" data-wow-delay="0.25s" data-wow-duration="1s">
         <img src="img\fig2.jpg" alt="Figure 2">
         <a class="popup-video" href="https://www.youtube.com/watch?v=7fcbkTdgRJk"><i class="fas fa-play"></i></a>
       </figure>
@@ -179,16 +182,16 @@
       <div class="col-lg-8 text-center mx-auto py-3">
         <h2>Trusted by over 250 great businesses</h2>
         <div class="d-flex justify-content-center">
-          <div class="img-wrap flex-fill p-5">
+          <div class="img-wrap flex-fill p-md-5 p-3">
             <img src="img/award4a.png" class="img-fluid testimonials-logo">
           </div>
-          <div class="img-wrap flex-fill p-5">
+          <div class="img-wrap flex-fill p-md-5 p-3">
             <img src="img/award1a.png" class="img-fluid testimonials-logo">
           </div>
-          <div class="img-wrap flex-fill p-5">
+          <div class="img-wrap flex-fill p-md-5 p-3">
             <img src="img/award5.png" class="img-fluid testimonials-logo">
           </div>
-          <div class="img-wrap flex-fill p-5">
+          <div class="img-wrap flex-fill p-md-5 p-3">
             <img src="img/award3a.png" class="img-fluid testimonials-logo">
           </div>
         </div>
@@ -256,12 +259,110 @@
         </div>
       </div>
     </div>
+    <div class="bg-white py-5">
+      <div class="col-lg-9 mx-auto d-md-flex py-3 px-0">
+        <div class="col-md-6 col-12 py-5">
+          <h2 class="py-3">Frequently Asked Questions</h2>
+          <div class="question">
+            <div class="question-header">
+              <button type="button" name="button" class="px-0 text-left" onclick="showQuestionText(0)">Email and user settings</button>
+            </div>
+            <div class="question-text" style="display:block">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>
+            </div>
+          </div>
+          <div class="question">
+            <div class="question-header">
+              <button type="button" name="button" class="px-0 text-left" onclick="showQuestionText(1)">Import new billing system data</button>
+            </div>
+            <div class="question-text">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>
+            </div>
+          </div>
+          <div class="question">
+            <div class="question-header">
+              <button type="button" name="button" class="px-0 text-left" onclick="showQuestionText(2)">Working with integrated apps</button>
+            </div>
+            <div class="question-text">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>
+            </div>
+          </div>
+          <div class="question">
+            <div class="question-header">
+              <button type="button" name="button" class="px-0 text-left" onclick="showQuestionText(3)">Two-factor authentication</button>
+            </div>
+            <div class="question-text">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia magni dolores eos qui ratione sequi nesciunt, neque et quis autem velis reprehenderit ets quis velit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 py-5">
+          <div class="col-12 bg-light border more-question text-center">
+            <div class="col-11 mx-auto">
+              <i class="fas fa-dharmachakra" style="font-size:4rem; color: #1e90ff"></i>
+              <h2 class="my-4">Still Have Questions?</h2>
+              <p class="my-3">We hope our answers to some of your frequently asked questions help, but if you have any further queries, please don't hesitate to get in touch today.</p>
+              <button type="button" name="button" class="btn-blue-shadow py-3 px-4 my-3">Ask us Anything</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-  </div>
   <!-- Pricing -->
   <div id="pricing">
+    <div class="bg-light">
+      <div class="text-center mx-auto pricing-header col-11">
+        <h1>Pricing for every business, at any stage</h1>
+        <span>All pricing packages are backed up by a 30-day money back guarantee.</span>
+      </div>
+      <div class="col-lg-9 mx-auto d-md-flex px-0">
+        <div class="col-md-4 mx-auto my-5">
+          <div class="bg-white p-5 pricing-box text-center">
+            <h5>Basic</h5>
+            <h1>$25</h1>
+            <span>Per Month</span>
+            <div class="pricing-box-features text-left mx-2">
+              <p><i class="fas fa-check"></i>Custom Charts</p>
+              <p><i class="fas fa-check"></i>5 Mailboxes, 10 Gb Storage</p>
+              <p><i class="fas fa-check"></i>Unlimited Free Dashboards</p>
+              <p><i class="fas fa-check"></i>Access to all APIs</p>
+            </div>
+            <button type="button" name="button">Free 15-day trial</button>
+          </div>
+        </div>
+        <div class="col-md-4 mx-auto my-5">
+          <div class="bg-white p-5 pricing-box-highlight pricing-box text-center">
+            <div class="ribbon"><span>Featured</span></div>
+            <h5>Standard</h5>
+            <h1>$99</h1>
+            <span>Per Month</span>
+            <div class="pricing-box-features text-left mx-2">
+              <p class="pricing-strong"><i class="fas fa-check"></i>All Basic features</p>
+              <p><i class="fas fa-check"></i>15 Mailboxes, 50 Gb Storage</p>
+              <p><i class="fas fa-check"></i>Interactive Screen Sharing</p>
+              <p><i class="fas fa-check"></i>Full Reports History</p>
+            </div>
+            <button type="button" name="button">Free 15-day trial</button>
+          </div>
+        </div>
+        <div class="col-md-4 mx-auto my-5">
+          <div class="bg-white p-5 pricing-box text-center">
+            <h5>Pro</h5>
+            <h1>$199</h1>
+            <span>Per Month</span>
+            <div class="pricing-box-features text-left mx-2">
+              <p class="pricing-strong"><i class="fas fa-check"></i>All Standard Features</p>
+              <p><i class="fas fa-check"></i>50 Mailboxes, 90 Gb Storage</p>
+              <p><i class="fas fa-check"></i>Dedicated Account Manager</p>
+              <p><i class="fas fa-check"></i>24/7 Priority Support</p>
+            </div>
+            <button type="button" name="button">Free 15-day trial</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Team -->
   <div id="team">
@@ -284,9 +385,16 @@
   <script src="js\bootstrap.min.js" type="text/javascript"></script>
   <script src="js\magnific-popup.min.js" type="text/javascript"></script>
   <script src="js\swiper.min.js" type="text/javascript"></script>
+  <script src="js\wow.js" type="text/javascript"></script>
   <script src="js\main.js" type="text/javascript"></script>
-
-
+  <script type="text/javascript">
+    wow = new WOW({
+      animateClass: 'animated',
+      offset: 100,
+      mobile: false, // trigger animations on mobile devices (default is true)
+    });
+    wow.init();
+  </script>
 </body>
 
 </html>
