@@ -56,6 +56,16 @@ span {
   letter-spacing: 0.5px;
 }
 
+figure {
+  display: inline-block;
+  position: relative;
+}
+
+figure.img-wrap>img {
+  border-radius: 10px;
+  box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.35);
+}
+
 /* Navigation Bar */
 .navbar-nav>li>a {
   color: #071e55;
@@ -183,7 +193,6 @@ current:hover {
 #about {
   z-index: 99;
   padding-top: 92px;
-  /* padding-bottom: 100px; */
   margin-top: -92px;
 }
 
@@ -205,17 +214,6 @@ current:hover {
 
 .about-features-highlight {
   border-bottom: 2px solid #1089d4;
-}
-
-figure {
-  display: inline-block;
-  position: relative;
-}
-
-figure.img-wrap>img {
-  border: 0px solid transparent;
-  border-radius: 10px;
-  box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
 .popup-video {
@@ -332,7 +330,7 @@ figure.img-wrap>img {
 }
 
 .card-box p {
-  font-style: italic;
+  font-style: italic !important;
   line-height: 1.6rem;
   padding: 5px 0px;
 }
@@ -555,6 +553,175 @@ figure.img-wrap>img {
   font-weight: 600;
 }
 
+.fact-header h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.fact-header span {
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.fact-header {
+  margin-bottom: 40px;
+}
+
+.fact-content i {
+  font-size: 3.7rem;
+  color: white;
+  /* margin-bottom: 10px; */
+}
+
+.fact-content h5 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.fact-content span {
+  color: white;
+  font-style: italic !important;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+/* Team */
+#team {
+  padding-top: 92px;
+  margin-top: -92px;
+  z-index: 95;
+}
+
+.team-container {
+  padding: 90px 0px;
+}
+
+.team-headder h1 {
+  font-size: 2.5rem;
+}
+
+.team-avatar-box {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+  margin-bottom: 20px;
+}
+
+.team-avatar-box>img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+.team-box {
+  margin-top: 60px;
+}
+
+.team-header {
+  /* padding-top: 70px; */
+}
+
+.team-header>span {
+  color: #7c8595;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+}
+
+.team-box h5::after {
+  background: #1e90ff;
+  display: block;
+  vertical-align: middle;
+  content: '';
+  width: 50px;
+  height: 3px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-header>h1 {
+  font-size: 2.5rem;
+}
+
+.team-box>p {
+  letter-spacing: 0.3px;
+}
+
+.team-box>h4 {
+  color: #454545;
+  font-size: 1.3rem;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.team-box>h5 {
+  color: #acacac;
+  font-style: italic !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+.team-contact {
+  margin-top: 25px;
+}
+
+.team-contact>a {
+  border-radius: 75px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.team-contact>a>i {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  padding: 9px 10px;
+}
+
+a.twitter {
+  background-color: #4099ff;
+}
+
+a.pinterest {
+  background-color: #C92228;
+}
+
+a.linkedin {
+  background-color: #3b5998;
+}
+
+a.github {
+  background-color: #24292e;
+}
+
+.team-textbox h3 {
+  font-size: 1.8rem;
+  opacity: 1.0;
+}
+
+.team-logo-wrapper i {
+  font-size: 4rem;
+  color: white;
+  border-radius: 50%;
+}
+
+.team-logo-wrapper {
+  background-color: #017df7;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.team-textbox {
+  padding: 14px 0px;
+}
+
 /* Responsive */
 @media only screen and (max-width: 1200px) {
   * {
@@ -569,10 +736,10 @@ figure.img-wrap>img {
 }
 
 @media only screen and (max-width: 768px) {
+  .fact-container {
+    display: none;
+  }
 
-  /* * {
-    font-size: 10px;
-  } */
   .navbar-nav>li>a {
     font-size: 1.5rem !important;
   }
@@ -582,8 +749,8 @@ figure.img-wrap>img {
   }
 }
 
-/* @media only screen and (max-width: 576px) {
-  * {
-    font-size: 9px;
+@media only screen and (max-width: 576px) {
+  .team-logo-wrapper {
+    display: none !important;
   }
-} */
+}
