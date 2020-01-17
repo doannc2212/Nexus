@@ -224,7 +224,7 @@ current:hover {
   border-radius: 50px;
   top: 50%;
   left: 50%;
-  margin-top: -30px;
+  margin-top: -50px;
   margin-left: -30px;
   cursor: pointer;
 }
@@ -706,7 +706,7 @@ a.github {
 }
 
 .team-logo-wrapper i {
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: white;
   border-radius: 50%;
 }
@@ -720,6 +720,126 @@ a.github {
 
 .team-textbox {
   padding: 14px 0px;
+}
+
+/* Features */
+#features {
+  padding-top: 92px;
+  margin-top: -92px;
+  z-index: 94;
+}
+
+#features>div {
+  padding: 80px 0;
+}
+
+.feature-header {
+  margin-bottom: 30px;
+}
+
+.feature-header h2 {
+  font-size: 2.6rem;
+}
+
+.feature-header>span {
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #7c8595;
+  font-family: 'Raleway', sans-serif;
+}
+
+.feature-content h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.feature-content p {
+  font-size: 1.2rem;
+  color: #7c8595;
+}
+
+.feature-content i {
+  font-size: 4rem;
+  color: #1e90ff;
+  margin-bottom: 15px;
+}
+
+.feature-content>div {
+  margin-top: 30px;
+}
+
+/* Blog */
+#blog {
+  padding-top: 92px;
+  margin-top: -92px;
+  z-index: 93;
+}
+
+.blog-header>span {
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #7c8595;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blog-box {
+  border: 1px solid #ebebeb;
+  border-bottom: 2px solid #1089d4;
+  border-radius: 5px;
+  box-shadow: rgba(33, 33, 33, .06) 0 4px 24px 5px;
+}
+
+.blog-box:hover {
+  box-shadow: rgba(33, 33, 33, .1) 0 0 30px 5px;
+}
+
+.blog-img-wrap {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+.blog-img-wrap>img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog-img-wrap:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.blog-text {
+  padding: 20px 25px;
+}
+
+.blog-text>h4 {
+  margin-bottom: 10px;
+}
+
+.blog-text>span {
+  color: #858585;
+  font-style: italic !important;
+}
+
+.blog-text>span>i {
+  color: #858585;
+  font-size: 1.1rem;
+  margin-right: 5px;
+}
+
+.blog-text>p {
+  margin-top: 10px;
+  color: #7c8595;
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+#blog>div {
+  padding: 80px 0;
 }
 
 /* Responsive */
