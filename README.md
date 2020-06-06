@@ -1,4 +1,4 @@
 # Nexus
 A single page front-end project using bootstrap to responsive.
 <br>
-Live Preview: https://nexus-cb657.firebaseapp.com/
+Live Preview: https://nexus-doannc.web.app/
